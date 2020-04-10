@@ -1,5 +1,7 @@
 package com.bigpractice.pojo;
 
+import lombok.*;
+
 import javax.persistence.*;
 
 /**
@@ -10,7 +12,13 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name = "db_door")
+@Table(name = "tb_door")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
 public class Door {
 
     @Id
